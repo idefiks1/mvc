@@ -36,7 +36,14 @@ include ('views/layouts/header.php');
                             }
                             ?>
                             <small><?= $value['date']."\n"; ?></small>
-                            <p><a href = "user/editComment?id=<?= $value['id']; ?>" >Edit</a></p>
+                            <?php
+                            if(isset($_SESSION['id']))
+                            {
+                            ?>
+                                <p><a href = "user/editComment?id=<?= $value['id']; ?>" >Edit</a></p>
+                            <?php
+                            }
+                            ?>
                         </ul>
                     </div>
                 <?php
@@ -92,7 +99,14 @@ include ('views/layouts/header.php');
                                 }
                                 ?>
                                 <small><?= $value['date']."\n"; ?></small>
-                                <p><a href = "user/editComment?id=<?= $value['id']; ?>" >Edit</a></p>
+                                <?php
+                                if(isset($_SESSION['id']))
+                                {
+                                ?>
+                                    <p><a href = "user/editComment?id=<?= $value['id']; ?>" >Edit</a></p>
+                                <?php
+                                }
+                                ?>
                             </ul>
                         </div>
                     <?php
