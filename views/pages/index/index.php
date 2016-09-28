@@ -114,14 +114,6 @@ include ('views/layouts/header.php');
                     ?>
                 </div>
                 <div class="col-md-3 col-md-offset-3">
-                    <?php
-                    if(isset($_SESSION['id']))
-                    {
-                    ?>
-                        <h4><a href="user/addComment"><?php echo "Add comment"; ?></a></h4>
-                    <?php
-                    }        
-                    ?>
                 </div>
                 <div class="col-md-3 col-md-offset-3">
                     <p>You ain't logged in.</p>

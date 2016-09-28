@@ -21,10 +21,14 @@
 				<div>
 					<?php if(isset($_SESSION['id']))
 					{?>
-					<h4>Hello, <span><?php echo $_SESSION['id'];?>!</span></h4>
+						<h6>Hello, <?php echo $_SESSION['id'];?>!</h6>
+						<a href = "/"><img src="<?php echo $imgUrl;?>"></a>
+						<a href="/user/logout"><h6><font>Logout</font></h6></a>
+					<?php}?>
 				</div>
+				
 			</div>
-				<a href="/user/logout"><h4><font>Logout</font></h4></a>
+				
 				<?php } ?>
 		</header>
 	</div>
