@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="/css/header.css" type="text/css">
  	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -22,7 +23,7 @@
 					<?php if(isset($_SESSION['id']))
 					{?>
 						<h6>Hello, <?php echo $_SESSION['id'];?>!</h6>
-						<a href = "/"><img src="<?php echo $imgUrl;?>"></a>
+						<div><a href = "/"><img src="<?php echo $imgUrl;?>" class="img-circle" style= "max-width: 20%;max-height:20%height:auto"></a></div>
 						<a href="/user/logout"><h6><font>Logout</font></h6></a>
 					<?php}?>
 				</div>

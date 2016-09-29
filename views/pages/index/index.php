@@ -14,11 +14,11 @@ include ('views/layouts/header.php');
                         <ul class="list-unstyled">
                             <b><?= $value['name']."\n"; ?></b>
                             <?php  
-                            if(strlen($value['comment'])>50)
+                            if(strlen($value['comment'])>60)
                             {
                             ?>
                                 <div>
-                                    <p><?=strCut($value['comment'],30,40);?></p>
+                                    <p><?=strCut($value['comment'],40,60);?></p>
                                     <a class="btn">View full...</a>
                                     <p id="hidden"><?= $value['comment'];?></p>
                                 </div>  
@@ -26,7 +26,7 @@ include ('views/layouts/header.php');
                             }
                             ?>   
                             <?php
-                            if(strlen($value['comment'])<50)
+                            if(strlen($value['comment'])<60)
                             {
                             ?>
                                 <li>
