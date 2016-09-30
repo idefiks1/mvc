@@ -6,6 +6,7 @@
         protected $dbname = 'vagrant';
         protected $username = 'root';
         protected $password = 'root';
+
         public function __construct()
         {
             try
@@ -18,5 +19,6 @@
                 echo $e->getMessage();
             }
         }
+        
     }
 ?>

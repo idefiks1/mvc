@@ -17,3 +17,4 @@ CREATE TABLE `users` (
 ALTER TABLE `users` ADD `hash` VARCHAR( 32 ) NOT NULL after `pwd`;
 ALTER TABLE `users` ADD `active` INT( 1 ) NOT NULL DEFAULT '0' after `hash`;
 ALTER TABLE `users` ADD `img` VARCHAR(50) NOT NULL after `HASH`;
+ALTER TABLE `comments` ADD `headline` VARCHAR( 100 ) NOT NULL after `id_user`;

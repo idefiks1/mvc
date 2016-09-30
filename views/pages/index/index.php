@@ -42,6 +42,7 @@ include ('views/layouts/header.php');
                             {
                             ?>
                                 <p><a href = "user/editComment?id=<?= $value['id']; ?>" >Edit</a></p>
+                                <hr></hr>
                             <?php
                             }
                             ?>
@@ -101,14 +102,7 @@ include ('views/layouts/header.php');
                                 ?>
                                 <b><?= $value['name']."\n"; ?></b>
                                 <small><?= $value['date']."\n"; ?></small>
-                                <?php
-                                if(isset($_SESSION['id']))
-                                {
-                                ?>
-                                    <p><a href = "user/editComment?id=<?= $value['id']; ?>" >Edit</a></p>
-                                <?php
-                                }
-                                ?>
+                                <hr></hr>
                             </ul>
                         </div>
                     <?php

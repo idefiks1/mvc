@@ -70,7 +70,7 @@ $(document).ready(function()
                 {
                     $("#Send").prop("disabled", "true");
                     $("#email").closest('.form-group').removeClass('has-success').addClass('has-error');
-                    $("#helpBlock2").html("This email already use or empty!");
+                    //$("#helpBlock2").html("This email already use or empty!");
                     
                 }
                 if (data.success1 == true)
