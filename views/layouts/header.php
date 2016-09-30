@@ -23,7 +23,7 @@
 					<?php if(isset($_SESSION['id']))
 					{?>
 						<h6>Hello, <?php echo $_SESSION['id'];?>!</h6>
-						<div><a href = "/"><img src="<?php echo $imgUrl;?>" class="img-circle" style= "max-width: 20%;max-height:20%height:auto"></a></div>
+						<div><a href = "/"><img src="<?php echo $imgUrl;?>" id="image" class="img-circle"></a></div>
 						<a href="/user/logout"><h6><font>Logout</font></h6></a>
 					<?php}?>
 				</div>

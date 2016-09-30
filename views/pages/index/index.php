@@ -12,7 +12,7 @@ include ('views/layouts/header.php');
                 ?>
                     <div class="bs-example" data-example-id="simple-ul">
                         <ul class="list-unstyled">
-                            <b><?= $value['name']."\n"; ?></b>
+                            <b><h5><?= $value['headline']."\n"; ?></b></h5></b>
                             <?php  
                             if(strlen($value['comment'])>60)
                             {
@@ -35,6 +35,7 @@ include ('views/layouts/header.php');
                             <?php 
                             }
                             ?>
+                            <b><?= $value['name']."\n"; ?></b>
                             <small><?= $value['date']."\n"; ?></small>
                             <?php
                             if(isset($_SESSION['id']))
@@ -75,7 +76,7 @@ include ('views/layouts/header.php');
                     ?>
                         <div class="bs-example" data-example-id="simple-ul">
                             <ul class="list-unstyled">
-                                <b><?= $value['name']."\n"; ?></b>
+                                <h5><?= $value['headline']."\n"; ?></h5>
                                 <?php  
                                 if(strlen($value['comment'])>50)
                                 {
@@ -98,6 +99,7 @@ include ('views/layouts/header.php');
                                 <?php 
                                 }
                                 ?>
+                                <b><?= $value['name']."\n"; ?></b>
                                 <small><?= $value['date']."\n"; ?></small>
                                 <?php
                                 if(isset($_SESSION['id']))

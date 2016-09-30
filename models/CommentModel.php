@@ -3,7 +3,7 @@
     {
         public function getData()
         {
-            $stmt = $this->db->prepare("select users.name, id, comment, date from comments INNER JOIN users on comments.id_user=users.id_user");
+            $stmt = $this->db->prepare("select users.name, id, comment, headline, date from comments INNER JOIN users on comments.id_user=users.id_user");
             $stmt->execute();
             $commentsArray = $stmt->fetchAll();
             return $commentsArray;
