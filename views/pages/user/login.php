@@ -11,7 +11,7 @@ include (APP_PATH.'/views/layouts/header.php');
             <label>
                 <p>Login</p>
             </label>
-            <p><input type="text" name="login" class="form-control" id="login" placeholder="Login"></p>
+                <p><input type="text" name="login" class="form-control" id="login" placeholder="Login"></p>
             <label>
                 <p>Password</p>
             </label>

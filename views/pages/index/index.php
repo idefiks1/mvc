@@ -18,7 +18,7 @@ include ('views/layouts/header.php');
                             {
                             ?>
                                 <div>
-                                    <p><?=strCut($value['comment'],40,60);?></p>
+                                    <p class="output"><?=strCut($value['comment'],40,60);?></p>
                                     <a class="btn">View full...</a>
                                     <p id="hidden"><?= $value['comment'];?></p>
                                 </div>  
@@ -29,9 +29,9 @@ include ('views/layouts/header.php');
                             if(strlen($value['comment'])<60)
                             {
                             ?>
-                                <li>
-                                    <h5><?= $value['comment']; ?></h5>
-                                </li>
+                                
+                                    <p class="output"><?= $value['comment']; ?></p>
+                                
                             <?php 
                             }
                             ?>
